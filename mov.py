@@ -59,9 +59,9 @@ def move_down(grid):
     return grid, score
 def get_move():
     while True:
-        print("Enter move (W/A/S/D): ", end='', flush=True)
+        print("Enter move (W/A/S/D). K ends the current game. Press H for a hint. ", end='', flush=True)
         key = msvcrt.getch().decode().upper()
-        if key in ['W', 'A', 'S', 'D', 'K']:
+        if key in ['W', 'A', 'S', 'D', 'K', 'H']:
             return key
         else:
             print("\nInvalid move. Please enter W, A, S, or D. Press K to end game.")
